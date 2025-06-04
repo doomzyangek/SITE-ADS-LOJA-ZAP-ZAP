@@ -1,0 +1,307 @@
+/* ==============================
+   Estilos gerais para o BODY
+   ============================== */
+body {
+    margin: 0;
+    border: 0;
+    font-family: 'Tahoma', 'Arial', sans-serif;
+    background: linear-gradient(#c3ffb6, #25D366);
+}
+
+/* ==============================
+   Logo da loja
+   ============================== */
+.logo {
+    width: 8%;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+
+/* ==============================
+   Estilo do HEADER
+   ============================== */
+header {
+    background-color: #25D366;
+}
+
+/* Container interno do header */
+.divHeader {
+    position: relative;
+    margin: auto;
+    padding-bottom: 2%;
+}
+
+/* ==============================
+   Menu de navegação
+   ============================== */
+nav {
+    position: absolute;
+    top: 20%;
+    right: 0;
+}
+
+/* Itens da lista do menu */
+nav li {
+    display: inline;
+    color: white;
+    margin-right: 15px;
+}
+
+/* Links do menu */
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+/* Efeito hover nos links do menu */
+nav a:hover {
+    color: #347343;
+}
+
+/* ==============================
+   Banner principal
+   ============================== */
+.divBanner {
+    background-color: white;
+}
+
+/* Imagem do banner */
+.banner {
+    width: 70%;
+    height: 40%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* ==============================
+   Seção SOBRE NÓS
+   ============================== */
+.sobre_nos {
+    margin: 0;
+    text-align: justify;
+    width: 65%;
+    margin-left: 20%;
+}
+
+/* Imagem dentro da seção SOBRE NÓS */
+.img_sobrenos {
+    width: 15%;
+    float: left;
+    margin-right: 20px;
+}
+
+/* Título padrão das seções */
+.titulo {
+    clear: left;
+    text-align: center;
+}
+
+/* ==============================
+   Seção NOSSO ESTABELECIMENTO
+   ============================== */
+/* Alinhamento do texto */
+.mapaGeral p {
+    text-align: center;
+}
+
+/* Margem da área do mapa */
+.mapa {
+    margin-left: 17%;
+}
+
+/* ==============================
+   Seção NOSSOS PRODUTOS
+   ============================== */
+.nossosprodutos {
+    padding: 5px;
+}
+
+/* Container NOSSOS PRODUTOS */
+.div_nossosprodutos {
+    width: 70%;
+    margin-left: 30%;
+}
+
+/* Lista dentro da seção NOSSOS PRODUTOS */
+.lista_nossosprodutos {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+}
+
+/* Espaçamento entre itens da lista */
+.lista_nossosprodutos li {
+    line-height: 1.5;
+}
+
+/* Símbolo antes de cada item da lista */
+.lista_nossosprodutos li:before {
+    content: "- ";
+}
+
+/* Imagens dentro da seção NOSSOS PRODUTOS */
+.img_nossosprodutos {
+    width: 10%;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px 0px #000000;
+}
+
+/* ==============================
+   Estilização para vídeo
+   ============================== */
+.video {
+    padding: 5% 0 0 16%;
+}
+
+/* ==============================
+   Container dos cards dos produtos
+   ============================== */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+/* Estilo individual dos cards */
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 280px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Imagem dentro dos cards */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* Título dentro do card */
+.card h3 {
+    margin: 15px 0 10px 0;
+}
+
+/* Texto do card */
+.card p {
+    font-size: 14px;
+    color: #444;
+}
+
+/* Botão dentro do card */
+.card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #00cc66;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efeito hover no botão do card */
+.card button:hover {
+    background-color: #00994d;
+}
+
+/* Efeito hover no card inteiro */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+/* ==============================
+   Estilização do mapa de contato
+   ============================== */
+.mapaContato {
+    padding-bottom: 20%;
+}
+
+/* ==============================
+   Estilo do rodapé
+   ============================== */
+.footer {
+    background-color: #1a9949; /* fundo escuro */
+    color: #0b0d0b; /* texto escuro */
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin-top: 40px;
+}
+
+/* Logo dentro do rodapé */
+.footer-logo {
+    width: 5%;
+    margin-bottom: 15px;
+}
+
+/* Texto do rodapé */
+.footer p {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* ==============================
+   Formulário de contato
+   ============================== */
+.formulario-container {
+    background-color: #f9f9f9;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.formulario-container h3 {
+    color: #1a9949;
+    margin-bottom: 15px;
+}
+
+.formulario-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 600;
+}
+
+.formulario-container input,
+.formulario-container textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario-container button {
+    background-color: #1a9949;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario-container button:hover {
+    background-color: #157a3a;
+}
+
+/* Mensagem de resultado do formulário */
+#resultado {
+    margin-top: 10px;
+    color: #1a9949;
+    font-weight: 500;
+}
