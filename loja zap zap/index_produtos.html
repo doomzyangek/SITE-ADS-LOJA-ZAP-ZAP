@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>Loja Zap Zap</title>
+    <!-- Link para o arquivo de estilos CSS -->
+    <link href="css/estilos.css" rel="stylesheet" />
+    <script>
+        // Função para abrir uma janela popup com informações do produto
+        function abrirPopup(produto) {
+            let url = "";
+
+            // Define a URL do popup de acordo com o produto selecionado
+            if (produto === 'fone') {
+                url = "popup_fone.html";
+            } else if (produto === 'carregador') {
+                url = "popup_carregador.html";
+            } else if (produto === 'capinha') {
+                url = "popup_capinha.html";
+            }
+
+            // Abre a janela popup com tamanho definido
+            window.open(url, "popup", "width=500,height=600");
+        }
+    </script>
+</head>
+<body>
+    <!-- Cabeçalho com logo e menu de navegação -->
+    <header>
+        <div class="divHeader">
+            <img src="img/logo.jpeg" title="Loja Zap Zap" class="logo" alt="Logo Zap Zap" />
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index_produtos.html">Produtos</a></li>
+                    <li><a href="index_contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner principal -->
+    <div class="divBanner">
+        <img src="img/banner.jpeg" class="banner" alt="Banner Loja Zap Zap" />
+    </div>
+
+    <!-- Conteúdo principal com cards de produtos -->
+    <main>
+        <h2 class="titulo">Nossos Produtos</h2>
+
+        <div class="cards-container">
+            <!-- Card do Fone Bluetooth -->
+            <div class="card">
+                <img src="img/fonebluetooth.png" alt="Fone de Ouvido Bluetooth" />
+                <h3>Fone Bluetooth</h3>
+                <p>Qualidade de som incrível, bateria de longa duração e conexão rápida.</p>
+                <button onclick="abrirPopup('fone')">Informações</button>
+            </div>
+
+            <!-- Card do Carregador Turbo -->
+            <div class="card">
+                <img src="img/carregador.png" alt="Carregador Turbo" />
+                <h3>Carregador Turbo</h3>
+                <p>Carregamento ultra rápido, compatível com diversos modelos de celulares.</p>
+                <button onclick="abrirPopup('carregador')">Informações</button>
+            </div>
+
+            <!-- Card da Capinha Antishock -->
+            <div class="card">
+                <img src="img/capinha.png" alt="Capinha Antishock" />
+                <h3>Capinha Antishock</h3>
+                <p>Proteção máxima para seu aparelho, com design moderno e resistente.</p>
+                <button onclick="abrirPopup('capinha')">Informações</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé com logo e direitos autorais -->
+    <footer class="footer">
+        <div>
+            <img src="img/logo.jpeg" alt="Logo Zap Zap" class="footer-logo" />
+            <p>© 2025 Zap Zap Acessórios. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
